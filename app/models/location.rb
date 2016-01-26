@@ -1,4 +1,4 @@
 class Location < ActiveRecord::Base
-  geocode_by :address
+  geocoded_by :address
   after_validation :geocode
 end
